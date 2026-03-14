@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Love Music Login</title>
+
+<style>
+
+/* Page Background */
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI', sans-serif;
+
+    background: radial-gradient(circle at top,#1a1325,#000000);
+    color:white;
+}
+
+/* Title */
+
+h1{
+    font-size:60px;
+    letter-spacing:5px;
+    margin-bottom:30px;
+}
+
+/* Login Card */
+
+.card{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+    width:320px;
+}
+
+/* Labels */
+
+label{
+    display:block;
+    text-align:left;
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+/* Inputs */
+
+input{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #333;
+    background:#111;
+    color:white;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#a855f7;
+    box-shadow:0 0 8px #a855f7;
+}
+
+/* Buttons */
+
+.btn{
+    margin-top:20px;
+}
+
+button{
+    padding:10px 25px;
+    border:none;
+    border-radius:10px;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Login button */
+
+#login{
+    background: linear-gradient(135deg,#9333ea,#ec4899);
+    color:white;
+}
+
+#login:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 10px #9333ea;
+}
+
+/* Cancel button */
+
+#cancel{
+    background:#444;
+    color:white;
+    margin-left:15px;
+}
+
+#cancel:hover{
+    background:#666;
+}
+
+/* Result text */
+
+#result{
+    margin-top:15px;
+    color:#c084fc;
+}
+#home{
+    align-items: right;
+  text-align: right;
+  justify-content: right;
+}
+</style>
+</head>
+
+<body>
+    Welcome to 
+<h1 style="text-align: center; font-family:cursive;font-size: 50px">Love Music🎧🎵🩷</h1>
+
+<div class="card">
+
+<label>Username</label>
+<input type="text" id="name">
+<br><br>
+
+<label>Password</label>
+<input type="password" id="pass">
+<br><br>
+
+<div class="btn">
+<button id="login">Login</button>
+<button id="cancel">Cancel</button>
+</div>
+<br>
+<a href="LoveMusic.html" style=" color: aliceblue; font-weight: 100;">Continue as Guest</a>
+<h4 id="result"></h4>
+
+</div>
+
+<script>
+
+const userName = document.getElementById("name");
+const password = document.getElementById("pass");
+const cancelbtn = document.getElementById("cancel");
+const loginbtn = document.getElementById("login");
+const message = document.getElementById("result");
+
+let user1 = "Kruthikaaaaaaa";
+let pass1 = "bangtan_07";
+
+loginbtn.onclick = function(){
+
+let userInput = userName.value;
+let passInput = password.value;
+
+if(userInput === user1 && passInput === pass1){
+message.textContent = "Login Successful 🎉";
+
+/* redirect to homepage after login */
+
+setTimeout(function(){
+window.location.href = "LoveMusic.html";
+},1000);
+
+}
+else if(userInput === "" || passInput === ""){
+alert("Enter Values");
+}
+else{
+alert("Login Failed");
+}
+
+}
+
+cancelbtn.onclick = function(){
+alert("Login Cancel");
+}
+
+</script>
+
+</body>
+</html>

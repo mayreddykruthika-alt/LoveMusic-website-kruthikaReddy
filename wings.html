@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Music🎧🎵🩷 | Kruthika</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="LoveMusic.css">
+<style>
+  /* Bottom audio player */
+
+.bottom-player{
+bottom:0;
+left:0;
+width:100%;
+  
+background:#0b0c10;
+border-top:1px solid #2a2a2a;
+
+padding:10px 20px;
+z-index:100;
+}
+
+/* audio element */
+
+.bottom-player audio{
+width:100%;
+outline:none;
+}
+.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+      gap: 15px;
+      margin: 20px 0 30px;
+    }
+    .album {
+      background: #19171d;
+      border-radius: 16px;
+      padding: 12px ;
+      border: 1px solid #332f38;
+    }
+    .album img{
+      width:150px;
+      height: 150px;
+      border-radius: 10%;
+    }
+    .profile img{
+      width:50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    #login{
+  text-align: right;}
+</style>
+</head>
+
+<body>
+  <!-- ---------- NAVBAR ---------- -->
+
+  <nav>
+<div style="margin-left: 0%; margin-bottom: 0%;" class="profile">  
+          <img src="Albums/Love music.png">
+        </div>
+<div class="logo">Love Music🎧🎵🩷</div>
+
+  <ul>
+  <li><a href="LoveMusic.html">Home</a></li>
+  <li><a href="LoveMusic.html">Your Playlist</a></li>
+  <li><a href="LoveMusic.html">Albums</a></li>
+  <li><a href="LoveMusic.html">Artists</a></li>
+  <li><a href="LoveMusic.html">Browse All</a></li>
+  </ul>
+  <a href="index.html" style="color: aliceblue;text-decoration: none;"> <h4 id="login">Sign out </h4></a>
+  </nav>
+
+  <div class="library">
+    <div class="bottom-player">
+      <div class="grid">
+          <div class="card">
+          <a href="LoveMusic.html">
+            <img src="Albums/wings.jpeg" height="150px" width="150px">
+            <h3>Wings</h3>
+          </a>
+          </div>
+      </div>
+    
+      <div class="bottom-player">
+        <br>
+        <div class="song">
+            <p>Blood Sweat & Tears</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2u54HNQamwFuOMLSuhSRom?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="song">
+            <p>Begin</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0bGJHUPR6ems9tzIljlPFR?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="song">
+            <p>Lie</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1nWB8isqs2tviWk20G5pow?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="song">
+            <p>2! 3!</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3KVOfGrYVjoP1w8T2HVltm?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+        </div>
+        <br>
+        <div class="song">
+            <p>Awake</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3gxNkvcP8scSzL6mGznTn3?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="song">
+            <p>Lost</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/52d5NT69mkmr6WzvQJ9vHr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <br>
+        <div class="song">
+            <p>21st century Girl</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/52d5NT69mkmr6WzvQJ9vHr?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
